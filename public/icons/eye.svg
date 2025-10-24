@@ -1,0 +1,6 @@
+<Image
+  src="/icons/eye.svg"
+  alt="Show password"
+  width={20}
+  height={20}
+/>

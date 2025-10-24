@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&family=Fraunces:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FFF8F3;
+  --foreground: #1A1A1A;
+  --dark-bg: #000;
+  --dark-active: #FFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-urbanist);
+}
+
+.font-fraunces {
+  font-family: var(--font-fraunces);
+}
+
+.font-urbanist {
+  font-family: var(--font-urbanist);
+}
+
+.font-nunito {
+  font-family: 'Nunito', sans-serif;
+
+
+}
+
+.font-merriweather {
+  font-family: 'Merriweather', serif;
+}
+
+.font-gilroy {
+  font-family: 'Gilroy', sans-serif;
+}
