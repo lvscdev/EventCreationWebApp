@@ -42,11 +42,20 @@ export default function CreateEventPage() {
 
   return (
     <div className="min-h-screen bg-[#150304] px-6 lg:px-20 py-14 text-white font-urbanist">
-      <h1 className="text-3xl font-fraunces mb-10">
+    {/* === Background Layers === */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,85,34,0.12),_transparent_60%)]" />
+          <Image
+            src="/images/image_background.png"
+            alt="Decorative background lines"
+            fill
+            className="object-cover opacity-70 pointer-events-none select-none"
+          />
+
+      <h1 className="relative text-3xl font-fraunces mb-10 z-10">
         <span className="text-[#FF6825]">Create</span> New Event
       </h1>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <form onSubmit={handleSubmit(onSubmit)} className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 z-10">
 
         {/* LEFT SIDE FORM INPUTS */}
         <div className="space-y-6">
@@ -137,7 +146,7 @@ export default function CreateEventPage() {
       </form>
 
       {/* ACTION BUTTONS */}
-      <div className="mt-10 flex gap-6">
+      <div className="relative z-10 mt-10 flex gap-6">
         <button type="submit" onClick={handleSubmit(onSubmit)} className="bg-[#FF6825] hover:bg-[#d75a1d] px-6 py-3 rounded-md font-medium">
           Publish Event
         </button>
