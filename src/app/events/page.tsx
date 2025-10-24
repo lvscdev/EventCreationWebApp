@@ -18,7 +18,7 @@ export default function EventsPage() {
         fill
         className="object-cover opacity-70 pointer-events-none select-none"
       />
-
+      
       {/* === Top Section === */}
       <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center px-6 md:px-16 pt-10 md:pt-14 gap-6">
         {/* Page Title */}
