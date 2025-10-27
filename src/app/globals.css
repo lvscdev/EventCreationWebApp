@@ -45,3 +45,7 @@ body {
 .font-gilroy {
   font-family: 'Gilroy', sans-serif;
 }
+
+.input-card {
+  @apply w-full px-4 py-3 bg-white/[0.26] rounded-md outline-none;
+}
