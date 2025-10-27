@@ -287,9 +287,14 @@ export default function CreateEventPage() {
                   <div className="text-sm text-white/60 mb-2">Category of Event</div>
                   <select value={category} onChange={(e) => setCategory(e.target.value)} className="w-full px-4 py-3 bg-white/10 rounded-md outline-none">
                     <option value="">Select Category</option>
-                    <option value="music">Music</option>
                     <option value="conference">Conference</option>
-                    <option value="meetup">Meetup</option>
+                    <option value="Religion">Religion</option>
+                    <option value="concert">Concert</option>
+                    <option value="sports">Sports</option>
+                    <option value="exhibition">Exhibition</option>
+                    <option value="comedy_show">Comedy Show</option>
+                    <option value="charity_event">Charity Event</option>
+
                   </select>
                 </div>
 
@@ -297,9 +302,11 @@ export default function CreateEventPage() {
                   <div className="text-sm text-white/60 mb-2">Capacity of Event</div>
                   <select value={capacity} onChange={(e) => setCapacity(e.target.value)} className="w-full px-4 py-3 bg-white/10 rounded-md outline-none">
                     <option value="">Select Capacity</option>
-                    <option value="50">50</option>
-                    <option value="100">100</option>
-                    <option value="500">500</option>
+                    <option value="0 - 500">500</option>
+                    <option value="500 - 1000">1000</option>
+                    <option value="1001 - 1500">1500</option>
+                    <option value="1501 - 2000">2000</option>
+                    <option value="2001 - 2500">2500</option>
                   </select>
                 </div>
               </div>
